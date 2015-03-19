@@ -20,7 +20,7 @@ public class StatusTwitter {
     public static void main(String[] args) throws TwitterException {
      
         Twitter mitwitter = new TwitterFactory().getInstance();
- 
+        
         Query query = new Query("#Cangas");
         QueryResult result = mitwitter.search(query);
         for (Status status : result.getTweets()) {
